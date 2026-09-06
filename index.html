@@ -1,0 +1,485 @@
+<!DOCTYPE html><html>
+<head>
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <title>Bootstrap Activity</title><link rel="stylesheet" type="text/css" href="bootstrap-5.3.8-dist/css/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="bootstrap5/css/bootstrap-icons.css">
+
+<style>
+ html{
+  scroll-behavior: smooth;
+ }
+
+ .hero{
+  background-color: #0d6efd;
+  color: white;
+  padding: 140px 0;
+}
+
+ .section{
+  padding: 80px 0;
+ }
+
+ .feature-icon{
+  font-size: 50px;
+ }
+
+ .popular{
+  border: 2px solid #0d6efd;
+ }
+</style>
+
+</head><body><!-- navbar -->
+<nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
+ <div class="container">
+
+  <a class="navbar-brand fw-bold" href="#home">
+   <i class="bi bi-code-slash"></i>
+   Bootstrap 5 Website
+  </a>
+
+  <button class="navbar-toggler" type="button"
+   data-bs-toggle="collapse"
+   data-bs-target="#navbarNav">
+   <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarNav">
+
+   <ul class="navbar-nav ms-auto">
+
+    <li class="nav-item">
+     <a class="nav-link" href="#home">Home</a>
+    </li>
+
+    <li class="nav-item">
+     <a class="nav-link" href="#features">Features</a>
+    </li>
+
+    <li class="nav-item">
+     <a class="nav-link" href="#pricing">Pricing</a>
+    </li>
+
+    <li class="nav-item">
+     <a class="nav-link" href="#Reviews">Reviews</a>
+    </li>
+
+    <li class="nav-item">
+     <a class="nav-link" href="#contact">Contact</a>
+    </li>
+
+    <li class="nav-item ms-2">
+     <button type="button" class="btn btn-outline-secondary"
+      id="themeToggle">
+      <i class="bi bi-moon-fill"></i>
+     </button>
+    </li>
+
+   </ul>
+
+  </div>
+ </div>
+</nav>
+
+
+<!-- home -->
+<header id="home" class="hero text-center">
+
+ <div class="container">
+
+  <span class="badge bg-light text-primary">
+ Version 5.3.8
+</span>
+
+  <h1 class="display-3 fw-bold mt-3">
+   Build fast, responsive sites with Bootstrap
+  </h1>
+
+  <p class="lead">
+   Powerful, extensible, and feature-packed frontend toolkit. Build and customize with Sass, Utilize  prebuilt grid system and components, and bring projects to life with powerful Javascript plugins
+
+  </p>
+
+ <a href="#features" class="btn btn-light btn-lg">
+ Get Started
+</a>
+
+<a href="#pricing" class="btn btn-outline-light btn-lg">
+ Download Bootstrap 5.3.8
+</a>
+
+ </div>
+
+</header>
+
+
+<!-- features -->
+<section id="features" class="section">
+
+ <div class="container">
+
+  <div class="text-center mb-5">
+   <h2>Powerful Features</h2>
+   <p>Designed to give you full control over your layout and functionality.</p>
+  </div>
+
+  <div class="row">
+
+   <div class="col-md-4">
+
+    <div class="card text-center h-100">
+     <div class="card-body">
+
+      <i class="bi bi-laptop feature-icon text-primary"></i>
+
+      <h4>Dark Mode Ready</h4>
+
+      <p>
+       Built-in theme switcher using Bootstrap 
+       5's native data-bs-theme attribute
+      </p>
+
+     </div>
+    </div>
+
+   </div>
+
+
+   <div class="col-md-4">
+
+    <div class="card text-center h-100">
+     <div class="card-body">
+
+      <i class="bi bi-palette feature-icon text-primary"></i>
+
+      <h4>100% Mobile First</h4>
+
+      <p>
+       Fully fluid layout engineered to scale
+       down seamlessly to mobile screens.
+      </p>
+
+     </div>
+    </div>
+
+   </div>
+
+
+   <div class="col-md-4">
+
+    <div class="card text-center h-100">
+     <div class="card-body">
+
+      <i class="bi bi-shield-check feature-icon text-primary"></i>
+
+      <h4>Interactive UI</h4>
+
+      <p>
+       Includes dynamic feedback toasts,
+       sliders, and form validation logic.
+      </p>
+
+     </div>
+    </div>
+
+   </div>
+
+  </div>
+
+ </div>
+
+</section>
+
+
+<!-- pricing -->
+<section id="pricing" class="section bg-body-tertiary">
+
+ <div class="container">
+
+  <div class="text-center mb-5">
+   <h2>Flexible Pricing</h2>
+   <p>Choose the plan that fits your business needs.</p>
+  </div>
+
+  <div class="row">
+
+   <!-- basic -->
+   <div class="col-md-4">
+
+    <div class="card h-100">
+
+     <div class="card-body text-center">
+
+      <h4>Starter</h4>
+
+      <h2>₱0.00 <small>/mo</small></h2>
+
+      <ul class="list-group list-group-flush">
+       <li class="list-group-item">1 Project</li>
+       <li class="list-group-item">Community Support</li>
+       <li class="list-group-item">Custom Domain</li>
+      </ul>
+
+      <button type="button" class="btn btn-primary mt-3">
+       Sign Up Free
+      </button>
+
+     </div>
+
+    </div>
+
+   </div>
+
+
+   <!-- pro -->
+   <div class="col-md-4">
+
+    <div class="card h-100 popular">
+
+     <div class="card-header text-center bg-primary text-white">
+      Most Popular
+     </div>
+
+     <div class="card-body text-center">
+
+      <h4>Pro Developer</h4>
+
+      <h2>₱49.00 <small>/mo</small></h2>
+
+      <ul class="list-group list-group-flush">
+       <li class="list-group-item">Unlimited Projects</li>
+       <li class="list-group-item">Priority Support</li>
+       <li class="list-group-item">Custom Domain</li>
+      </ul>
+
+      <button type="button" class="btn btn-primary mt-3">
+       Get Started Pro
+      </button>
+
+     </div>
+
+    </div>
+
+   </div>
+
+
+   <!-- enterprise -->
+   <div class="col-md-4">
+
+    <div class="card h-100">
+
+     <div class="card-body text-center">
+
+      <h4>Enterprise</h4>
+
+      <h2>₱109.00 <small>/mo</small></h2>
+
+      <ul class="list-group list-group-flush">
+       <li class="list-group-item">Dedicated Server</li>
+       <li class="list-group-item">24/7 Phone Support</li>
+       <li class="list-group-item">SLA Guarantee</li>
+      </ul>
+
+      <button type="button" class="btn btn-primary mt-3">
+       Contact Sales
+      </button>
+
+     </div>
+
+    </div>
+
+   </div>
+
+  </div>
+
+ </div>
+
+</section>
+
+
+<!-- testimonials -->
+<section id="testimonials" class="section">
+
+ <div class="container">
+
+  <h2 class="text-center mb-5">
+   What People Say
+  </h2>
+
+  <div id="myCarousel" class="carousel slide">
+
+   <div class="carousel-inner">
+
+    <div class="carousel-item active text-center">
+
+     <p class="lead">
+      "This Bootstrap starter layout completely sped up my
+      client workflow. Highly recommended!"
+     </p>
+
+     <h5>
+      Calvin Placio, BSIT-Network Technology Track
+     </h5>
+
+     <p>
+      Lead Developer, Code-Smart Solutions
+     </p>
+
+    </div>
+
+
+    <div class="carousel-item text-center">
+
+     <p class="lead">
+      "The dark mode toggle integration works like a charm.
+      Extremely clean markup!"
+     </p>
+
+     <h5>
+      Harrold Evangelista, BSIT-Business Analytics Track
+     </h5>
+
+     <p>
+      UI/UX Designer
+     </p>
+
+    </div>
+
+   </div>
+
+
+   <button class="carousel-control-prev"
+    type="button"
+    data-bs-target="#myCarousel"
+    data-bs-slide="prev">
+
+    <span class="carousel-control-prev-icon"></span>
+
+   </button>
+
+
+   <button class="carousel-control-next"
+    type="button"
+    data-bs-target="#myCarousel"
+    data-bs-slide="next">
+
+    <span class="carousel-control-next-icon"></span>
+
+   </button>
+
+  </div>
+
+ </div>
+
+</section>
+
+
+<!-- contact -->
+<section id="contact" class="section bg-body-tertiary">
+
+ <div class="container">
+
+  <h2 class="text-center">
+   Get In Touch
+  </h2>
+
+  <p class="text-center">
+   Fill out the form below to send us a live message.
+  </p>
+
+  <div class="row justify-content-center">
+
+   <div class="col-md-8">
+
+    <form id="contactForm">
+
+     <label class="form-label">First Name</label>
+     <input type="text" class="form-control mb-3"
+      id="fullName" placeholder="First Name" required>
+
+
+     <label class="form-label">Last Name</label>
+     <input type="text" class="form-control mb-3"
+      id="lastName" placeholder="Last Name" required>
+
+
+     <label class="form-label">Email Address</label>
+     <input type="email" class="form-control mb-3"
+      id="emailAddress"
+      placeholder="you@example.com"
+      required>
+
+
+     <label class="form-label">Message</label>
+     <textarea class="form-control mb-3"
+      id="messageText"
+      placeholder="Message"
+      rows="5"
+      required></textarea>
+
+
+     <button type="submit" class="btn btn-primary">
+      Submit Form
+     </button>
+
+    </form>
+
+   </div>
+
+  </div>
+
+ </div>
+
+</section>
+
+
+<!-- footer -->
+<footer class="bg-dark text-white text-center p-4">
+ © 2026 SirMags. Built with Bootstrap 5.3.
+</footer>
+
+
+<script src="bootstrap5/js/bootstrap.bundle.min.js"></script>
+<script src="bootstrap5/js/sweetalert2.all.min.js"></script>
+
+<script>
+
+ // dark mode
+ document.getElementById("themeToggle").onclick = function(){
+
+  var theme = document.documentElement.getAttribute("data-bs-theme");
+
+  if(theme == "dark"){
+
+   document.documentElement.setAttribute("data-bs-theme", "light");
+
+   this.innerHTML = '<i class="bi bi-moon-fill"></i>';
+
+  }else{
+
+   document.documentElement.setAttribute("data-bs-theme", "dark");
+
+   this.innerHTML = '<i class="bi bi-sun-fill"></i>';
+
+  }
+
+ };
+
+
+ // contact form
+ document.getElementById("contactForm").addEventListener("submit", function(e){
+
+  e.preventDefault();
+
+  Swal.fire({
+   title: "Success!",
+   text: "Your message has been submitted successfully.",
+   icon: "success"
+  });
+
+ });
+
+</script>
+
+</body>
+</html>
